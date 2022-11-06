@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+#app div {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    top: 50%;
+    left: 50%;
+    transition: all .5s;
+}
+
+#app h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+#app p {
+    font-size: 2.7rem;
+}
+
+#app a {
+    color: white;
+    text-decoration: underline;
+}
+
+#app button {
+    cursor: pointer;
+    margin-top: 1rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 50px;
+    background-color: #5217db;
+    border-radius: 8px;
+}
+
+#app #intro {
+    transform: translate(-50%, -50%);
+}
+
+#app #intro.out {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#app #about {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#app #about.show {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#app #contactMe {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#app #contactMe.show {
+    transform: translate(-50%, -50%) scale(1);
+}
